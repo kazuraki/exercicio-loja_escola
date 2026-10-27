@@ -1,0 +1,182 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Loja Escola, projeto didático de front-end com HTML semântico, Bootstrap e JavaScript.">
+  <title>Lojinha do Zé | Produtos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Lojinha do Zé</a>
+        <a class="nav-link" href="checkout.html">Finalizar compra</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero py-5">
+      <div class="container">
+        <p class="eyebrow">Loja escola</p>
+        <h1>Produtos para todos os gostos</h1>
+        <p class="lead">Encontre seu produto e faça uma compra simulada.</p>
+      </div>
+    </section>
+
+    <section class="container py-5" aria-labelledby="titulo-produtos">
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-3 mb-4">
+        <div>
+          <h2 id="titulo-produtos">Nossos produtos</h2>
+          <p class="text-secondary mb-0">Escolha um produto para continuar.</p>
+        </div>
+
+        <div class="product-filter">
+          <label for="filtroProduto" class="form-label">Buscar produto</label>
+          <input
+            id="filtroProduto"
+            class="form-control"
+            type="search"
+            placeholder="Digite o nome do produto"
+            autocomplete="off"
+          >
+          <p id="mensagemFiltro" class="small mt-2 mb-0" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="row g-4" id="listaProdutos">
+
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Caneca Dentuça">
+          <div class="card h-100 product-card">
+            <div class="product-illustration">
+              <img src="img/caneca_dentuca.jpg" alt="Caneca Dentuça">
+            </div>
+            <div class="card-body">
+              <p class="small text-secondary mb-1">Personalizável</p>
+              <h3 class="h5">Caneca Dentuça</h3>
+              <p>Caneca que sorri enquanto você toma suas coisas.</p>
+              <p class="price">R$ 589,90</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-dark" href="canecaDentuca.html">Ver detalhes</a>
+                <button class="btn btn-dark btn-comprar" type="button"
+                  data-nome="Caneca Dentuça" data-preco="589.90">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Iphone 6">
+          <div class="card h-100 product-card">
+            <div class="product-illustration">
+              <img src="img/iphone_6.jpg" alt="Iphone 6">
+            </div>
+            <div class="card-body">
+              <p class="small text-secondary mb-1">Tecnologia</p>
+              <h3 class="h5">Iphone 6</h3>
+              <p>Um clássico dos celulares para esta loja escola.</p>
+              <p class="price">R$ 99,99</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-dark" href="Iphone6.html">Ver detalhes</a>
+                <button class="btn btn-dark btn-comprar" type="button"
+                  data-nome="Iphone 6" data-preco="99.99">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Caneca Van Gogh">
+          <div class="card h-100 product-card">
+            <div class="product-illustration">
+              <img src="img/caneca_vangogh.jpg" alt="Caneca Van Gogh">
+            </div>
+            <div class="card-body">
+              <p class="small text-secondary mb-1">Arte e café</p>
+              <h3 class="h5">Caneca Van Gogh</h3>
+              <p>Uma caneca inspirada no universo da arte.</p>
+              <p class="price">R$ 74,50</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-dark" href="canecaVanGogh.html">Ver detalhes</a>
+                <button class="btn btn-dark btn-comprar" type="button"
+                  data-nome="Caneca Van Gogh" data-preco="74.50">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Gelatina Cesio">
+          <div class="card h-100 product-card">
+            <div class="product-illustration">
+              <img src="img/gelatina_cesio.jpg" alt="Gelatina Cesio">
+            </div>
+            <div class="card-body">
+              <p class="small text-secondary mb-1">Produto curioso</p>
+              <h3 class="h5">Gelatina Cesio</h3>
+              <p>Um item inusitado do catálogo da loja escola.</p>
+              <p class="price">R$ 29,00</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-dark" href="gelatinaCesio.html">Ver detalhes</a>
+                <button class="btn btn-dark btn-comprar" type="button"
+                  data-nome="Gelatina Cesio" data-preco="29.00">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Fone Headset">
+          <div class="card h-100 product-card">
+            <div class="product-illustration">
+              <img src="img/fone_ultimageracao.jpg" alt="Fone Headset">
+            </div>
+            <div class="card-body">
+              <p class="small text-secondary mb-1">Áudio</p>
+              <h3 class="h5">Fone Headset</h3>
+              <p>Para ouvir músicas, jogar ou participar de chamadas.</p>
+              <p class="price">R$ 449,90</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-dark" href="foneHeadset.html">Ver detalhes</a>
+                <button class="btn btn-dark btn-comprar" type="button"
+                  data-nome="Fone Headset" data-preco="449.90">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Suporte de Papel">
+          <div class="card h-100 product-card">
+            <div class="product-illustration">
+              <img src="img/papelUrso.jpg" alt="Suporte de Papel">
+            </div>
+            <div class="card-body">
+              <p class="small text-secondary mb-1">Organização</p>
+              <h3 class="h5">Suporte de Papel</h3>
+              <p>Um acessório simples para organizar seu espaço.</p>
+              <p class="price">R$ 59,90</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-dark" href="suportePapel.html">Ver detalhes</a>
+                <button class="btn btn-dark btn-comprar" type="button"
+                  data-nome="Suporte de Papel" data-preco="59.90">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container">
+      <p class="mb-0 text-secondary">Lojinha do Zé — projeto educacional de front-end.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
